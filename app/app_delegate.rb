@@ -1,7 +1,7 @@
 class AppDelegate
   def application(application, didFinishLaunchingWithOptions:launchOptions)
-    rootViewController = UIViewController.alloc.init
-    rootViewController.title = 'MyCamera'
+    rootViewController = CameraViewController.alloc.init
+    rootViewController.title = 'My Camera'
     rootViewController.view.backgroundColor = UIColor.whiteColor
 
     navigationController = UINavigationController.alloc.initWithRootViewController(rootViewController)
