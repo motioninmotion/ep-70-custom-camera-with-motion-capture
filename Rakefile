@@ -14,4 +14,5 @@ Motion::Project::App.setup do |app|
   app.name = 'MyCamera'
   app.frameworks += ["AVFoundation"]
   app.provisioning_profile = ENV["PROVISIONING_PROFILE"]
+  app.info_plist['NSCameraUsageDescription'] = 'Camera will be used for taking your profile photo.'
 end

@@ -1,7 +1,6 @@
 class CameraViewController < UIViewController
   def viewWillAppear(animated)
     super
-
     @capture = Motion::Capture.new
     @capture.attach(view)
     @capture.start!(AVCaptureSessionPresetHigh)
