@@ -12,6 +12,8 @@ class CameraViewController < UIViewController
   end
 
   def viewWillDisappear(animated)
+    super
+
     @capture.stop!
     view.removeGestureRecognizer(@tap_gesture)
   end
